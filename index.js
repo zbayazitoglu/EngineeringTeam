@@ -40,8 +40,6 @@ function writeToFile(data) {
           console.log(err);
         else {
           console.log("File written successfully\n");
-          console.log("The written has the following contents:");
-          console.log(fs.readFileSync(fileName, "utf8"));
         }
       });
 }
@@ -51,7 +49,7 @@ function generateQuestions(questions) {
         {
             type: 'input',
             message: questions[0],
-            name: 'title',
+            name: 'name',
         },
         {
             type: 'input',
